@@ -1,0 +1,325 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="icon" href="SCHLOGO.png">
+        <title>معرفی اعضاـ هنرستان ام البنین</title>
+        <body>
+            <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+        
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>   </title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#"></a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">منو</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                  <li><a href="پنل کاربری.html">پنل کاربری</a></li>
+                  <li><a href="اسامی غایبین.HTML">اسامی غایبین</a></li>
+                  <li><a href="معرفی دبیران.HTML">معرفی اعضا</a></li>
+                  <li><a href="درباره هنرستان.HTML">درباره هنرستان</a></li>
+                  <li><a href="طراح وب.html">طراح سایت</a></li>
+              </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+
+      const body = document.querySelector("body"),
+            nav = document.querySelector("nav"),
+            modeToggle = document.querySelector(".dark-light"),
+            searchToggle = document.querySelector(".searchToggle"),
+            sidebarOpen = document.querySelector(".sidebarOpen"),
+            siderbarClose = document.querySelector(".siderbarClose");
+      
+            let getMode = localStorage.getItem("mode");
+                if(getMode && getMode === "dark-mode"){
+                  body.classList.add("dark");
+                }
+      
+      // js code to toggle dark and light mode
+            modeToggle.addEventListener("click" , () =>{
+              modeToggle.classList.toggle("active");
+              body.classList.toggle("dark");
+      
+              // js code to keep user selected mode even page refresh or file reopen
+              if(!body.classList.contains("dark")){
+                  localStorage.setItem("mode" , "light-mode");
+              }else{
+                  localStorage.setItem("mode" , "dark-mode");
+              }
+            });
+      
+      // js code to toggle search box
+              searchToggle.addEventListener("click" , () =>{
+              searchToggle.classList.toggle("active");
+            });
+       
+            
+      //   js code to toggle sidebar
+      sidebarOpen.addEventListener("click" , () =>{
+          nav.classList.add("active");
+      });
+      
+      body.addEventListener("click" , e =>{
+          let clickedElm = e.target;
+      
+          if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+              nav.classList.remove("active");
+          }
+      });
+      
+      </script>
+            <style>
+        
+.box1 {
+    column-width: 300px;
+    column-gap: 30px;
+}
+.box1 {
+    column-width: 300px;
+    column-gap: 30px;  
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+/*شروع فوتر footer start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+footer{
+    background-image: linear-gradient(to right, #e7c6ff , #f16def);
+    height: auto;
+    width: 100vw;
+    padding-top: 90px;
+    color: #fff;
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .socials a i{
+    font-size: 12.1rem;
+    color: #5465ff;
+  }
+  .footer-butttom{
+    background: #dd40f1;
+    width: 100vw;
+    padding: 20px 0;
+    align-items: center;
+  }
+  .footer-butttom p{
+    font-size: 30px;
+    text-transform: capitalize;
+  
+  }
+            </style>
+         
+            <br><br><br><br><br>
+               <h1 style="color: deeppink;">معرفی اعضای  هنرستان ام البنین</h1>
+               <br><br>
+               <div class="box1"></div>
+               <div class="box1">
+                <!--شروع متن۱ paragraph1 start-->
+                <p>
+                    :اسامی هنر آموزان هنرستان🌼
+                    <br><br>
+                    :رشته کامپیوتر🌼
+                    <br><br>
+                   مرضیه خلفوند
+                   <br><br>
+                   عاطفه شاهرخی
+                   <br><br>
+                   سمیه کوشکی
+                   <br><br>
+                   نرگس توسلی
+                   <br><br>
+                   :رشته تربیت کودک🌼
+                   <br><br>
+                   لیلا ساکی
+                   <br><br>
+                   زهرا سیفی
+                   <br><br>
+                   نسرین رضایی آهنگران
+                   <br><br>
+                   :اسامی هنر آموزان هنرستان🌼
+                   <br><br>
+                   :رشته معماری
+                   <br><br>
+                   شیرین لاله زار
+                   <br><br>
+                   مریم میناپور
+                   <br><br>
+                   :رشته گرافیک🌼
+                   <br><br>
+                   زهرا زه تاب
+                   <br><br>
+                   نرگس غلامزاده
+                   <br><br>
+                   فرزانه عالیخانی
+                 
+              
+                    <br><br>
+                   
+                    <br><br>
+               
+                  <br><br>
+                  :اسامی دبیران نظری هنرستان🌼
+                  <br><br>
+                  هنر:فاطمه الماسی
+                  <br><br>
+                  تاریخ:لیلا خیرمندی
+                  <br><br>
+                  فارسی:تیموری
+                  <br><br>
+                  ورزش:مریم فرهام
+                  <br><br>
+                  دینی:بازگیر
+                  <br><br>
+                  ریاضی:رویا بنایی
+                  <br><br>
+                  زبان:خادمی
+                  <br><br>
+                  شیمی:کرم الهی
+                  <br><br>
+                  فیزیک:ابراهیمی
+                  <br><br>
+                  عربی:امیری
+                
+                </p>
+            </div>
+                <br><br>
+                <h2 style="color: black;">
+                    :اسامی کادر هنرستان
+                </h2>
+                <h2 style="color: deepskyblue;">
+                    :مدیر هنرستان🌼
+                </h2>
+                <h2 style="color: black;">مهرنوش عادلی</h2>
+                <h2 style="color: deepskyblue;">
+                  :معاون آموزشی🌼
+                </h2>
+                <h2 style="color: black;">فرانک حیدری</h2>
+                <h2 style="color: deepskyblue;">
+                    :معاون فنی🌼
+                  </h2>
+                  <h2 style="color: black;">سپیده یاراحمدی</h2>
+                  <h2 style="color: deepskyblue;">
+                    :معاون اجرایی🌼
+                  </h2>
+                  <h2 style="color: black;">شهین یگانه مقدم</h2>
+                  <h2 style="color: deepskyblue;">
+                    :سرپرست بخش🌼
+                  </h2>
+                  <h2 style="color: black;">غزال هراتی</h2>
+                <br><br>
+                <!--شروع فوتر footer start-->
+                <footer>
+                    <div class="footer-content">
+                        <h3>هنرستان فنی  حرفه ای دخترانه ام البنین</h3>
+                      <br>
+                      <p style="color: #fff;">
+                        آدرس  هنرستان فنی ام البنین
+                        <br>
+                        خیابان شهدای غربی کوچه ایران جنب امام زاده دوبرادران
+                        <br>
+                      </p>
+                      <p>
+                        066تلفن تماس  33302368
+                        <br>
+                        ساعت کاری هنرستان:روز های زوج ساعت 8 تا 12 ظهر
+                        <br>
+                         ،سال تحصیلی ساعت 7صبح تا 2 بعد از ظهر
+                    
+                    </p>
+              
+                        <ul class="socials">
+                            <li><a href="معرفی دبیران.HTML">معرفی اعضا</a></li>
+                            <li><a href="درباره هنرستان.HTML">درباره هنرستان</a></li>
+                            <li><a href="http://localhost/FORM1.PHP">پنل کاربری</a></li>
+                            <li><a href="گالری تصاویر.HTML">گالری تصاویر</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom" style="background: #ff99c8;">
+                      <h4 style="text-align: center;">made by
+                          <br>
+                          setareh gholamrezaie
+                      </h4>
+                    </div>
+                </footer>
+                 
+        </body>
+    </head>
+</html>

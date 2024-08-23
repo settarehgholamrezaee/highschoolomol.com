@@ -1,0 +1,91 @@
+
+
+
+
+@font-face {
+    font-family: vazir;
+    src: url(fonts/Vazir-Regular.woff)format('woff');
+  }
+  body{
+    font-family: vazir;
+  }
+  .card {
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+footer{
+  background-image: linear-gradient(to right, #e7c6ff , #f16def);
+  height: auto;
+  width: 100vw;
+  padding-top: 90px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.socials a i{
+  font-size: 12.1rem;
+  color: #5465ff;
+}
+.footer-butttom{
+  background: #dd40f1;
+  width: 100vw;
+  padding: 20px 0;
+  align-items: center;
+}
+.footer-butttom p{
+  font-size: 30px;
+  text-transform: capitalize;
+
+}
+
+
+
+
+ 
+  
+ 
+  

@@ -1,0 +1,234 @@
+
+
+
+@font-face {
+  font-family: vazir;
+  src: url(fonts/Vazir-Regular.woff)format('woff');
+}
+body{
+  font-family: vazir;
+}
+body{
+  background:#fff;
+}
+.container{
+  position: relative;
+  margin-top: 100px;
+}
+nav{
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 5%;
+
+  height: 100px;
+  background-color: #f0a7ff;
+}
+nav .logo{
+  float: left;
+  margin-top: 3px;
+}
+nav .links{
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .links li {
+  list-style: none;
+}
+nav .links  a {
+  display: block;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+nav .links :hover{
+color: #a813ff;
+}
+#nav-toggle{
+  position:  absolute;
+  top: -100%;
+}
+nav .icon-burger{
+  display: none;
+  position:  absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);    
+}
+nav .icon-burger .line{
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 3px;
+
+}
+@media screen and (max-width:768px) {
+  nav .logo{
+      float: none;
+      width: auto;justify-content: center;
+  }
+  nav .links{
+      float: none;
+      position: fixed;
+      z-index: 9;
+      left: 0;
+      right: 0;
+      top: 100px;
+      bottom: 100%;
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      background-color: rgba(211, 173, 255, 0.8);
+      overflow: hidden;
+      transition: all .5s ease-in-out;
+  }
+  nav .links a{
+      font-size: 20px;
+  }
+  nav .icon-burger{
+      display: block;
+  }
+  nav :checked ~ .links{
+      bottom: 0;
+
+  }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.gallery-section{
+    width: 100%;
+}
+.gallery-section .gallery-wrap{
+padding-top: 10px;
+
+}
+.gallery-section .gallery-wrap .gallery-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-gap: 5px;
+}
+.imag{
+    width: 100%;
+    border-radius: 20px;
+}
+.image-section{
+    padding: 10px;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery{
+    width: 100%;
+    position: relative;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery .image-section{
+    width: 100%;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery .image-section .imag{
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: block;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery  .caption{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(201, 0, 194, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+.gallery-section .gallery-wrap .gallery-images .gallery  .caption:hover{
+    opacity: 1;
+
+}
+.gallery-section .gallery-wrap .gallery-images .gallery  p{
+    font-size: 13px;
+    
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+  background-image: linear-gradient(to right, #e7c6ff , #f16def);
+  height: auto;
+  width: 100vw;
+  padding-top: 90px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.socials a i{
+  font-size: 12.1rem;
+  color: #5465ff;
+}
+.footer-butttom{
+  background: #dd40f1;
+  width: 100vw;
+  padding: 20px 0;
+  align-items: center;
+}
+.footer-butttom p{
+  font-size: 30px;
+  text-transform: capitalize;
+
+}
+
+
+

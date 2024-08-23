@@ -1,0 +1,327 @@
+<html>
+    <head>
+        <link rel="icon" href="SCHLOGO.png">
+       
+        <title>مطالب خواندنی - هنرستان ام البنین</title>
+        <body>
+            <nav> <input id="nav-toggle" type="checkbox">
+                <div class="logo"><img src="GHALEH.png" height="95px" width="200px"></div>
+               <ul class="links">
+                <form role="search" id="form">
+                    <input type="search" id="query" name="q"
+                     placeholder="Search..."
+                     aria-label="Search through site content">
+                    <button class="con2">
+                      <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                    </button>
+                  </form>
+               <li><a href="GHAYBE.HTML">اسامی غایبین</a></li>
+               <li><a href="TEACHERS.HTML">معرفی اعضا</a></li>
+               <li><a href="HONARESTAN.HTML">درباره هنرستان</a></li>
+               <li><a href="http://localhost/index.php">پنل کاربری</a></li>
+               <li><a href="omolbanin.html">صفحه اصلی</a></li>  </ul>
+               <label for="nav-toggle" class="icon-burger">
+               <div class="line"></div>
+               <div class="line"></div>
+               <div class="line"></div>
+               </label>
+               </nav>
+               <br><br><br>
+               <br><br><br>
+           
+            <style>
+  body{
+                background-image: url(1709057111110.png);
+                background-size: contain;
+            }
+
+@font-face {
+    font-family: vazir;
+    src: url(fonts/Vazir-Regular.woff)format('woff');
+}
+body{
+    font-family: vazir;
+}
+
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+footer{
+    background-image: linear-gradient(to right, #e7c6ff , #f16def);
+    height: auto;
+    width: 100vw;
+    padding-top: 90px;
+    color: #fff;
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .socials a i{
+    font-size: 12.1rem;
+    color: #5465ff;
+  }
+  .footer-butttom{
+    background: #dd40f1;
+    width: 100vw;
+    padding: 20px 0;
+    align-items: center;
+  }
+  .footer-butttom p{
+    font-size: 30px;
+    text-transform: capitalize;
+  
+  }
+nav{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+
+    height: 100px;
+    background-color: #f0a7ff;
+}
+nav .logo{
+    float: left;
+    margin-top: 3px;
+}
+nav .links{
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .links li {
+    list-style: none;
+}
+nav .links  a {
+    display: block;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav .links :hover{
+  color: #a813ff;
+}
+#nav-toggle{
+    position:  absolute;
+    top: -100%;
+}
+nav .icon-burger{
+    display: none;
+    position:  absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+nav .icon-burger .line{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+
+}
+@media screen and (max-width:768px) {
+    nav .logo{
+        float: none;
+        width: auto;justify-content: center;
+    }
+    nav .links{
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        background-color: rgba(211, 173, 255, 0.8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+    nav .links a{
+        font-size: 20px;
+    }
+    nav .icon-burger{
+        display: block;
+    }
+    nav :checked ~ .links{
+        bottom: 0;
+
+    }
+}
+form {
+    background-color: #e7c6ff;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7;
+  }
+   .con2{
+all: unset;
+cursor: pointer;
+width: 44px;
+height: 44px;
+}
+
+.image{
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+    height: 300px;
+    width: 400px;
+    }
+            </style>
+             <h1 style="color: chartreuse;">
+                تغذیه در ایام امتحانات
+            </h1>
+            <h3 style="color: #fff;">
+                بسیاری از دانش‌آموزان روزهای پیش از امتحان را تا حد امکان به مطالعه می‌پردازند و تصور می‌کنند که غذا و استراحت مانع مطالعه می‌شود، در صورتی که با تغذیه صحیح می‌توان بازده فکری را
+                <br><br>
+                افزایش داد به کارگیری نکات و توصیه‌های زیر توان شما را برای یادگیری بهتر و موفقیت در امتحانات افزایش می‌دهد
+                <br><br>
+                در زمان کار یا مطالعه غذا نخورید و برای این کار زمان خاصی را در نظر بگیرید تا با آرامش بیشتری غذا بخورید، در عین حال از مصرف زیاد شیرینی و تنقلات خودداری کنید✅
+                <br><br>
+                این خوراکی‌ها ممکن است در نگاه اول انرژی‌زا به نظر برسد اما باید توجه داشت که این قابلیت در آنها بسیار کم دوام است و پس از مدتی احساس خستگی بیشتری به شما خواهد داد
+                <br><br>
+                بررسی‌های دانشمندان نشان می‌دهد که غذاهای نشاسته‌ای مانند ماکارونی، برنج و نان به دلیل تاثیر در کیفیت خواب در شب امتحان مفید است✅
+                <br><br>
+                در صبح روز امتحان نیز بهتر است به منظور افزایش کارایی مغز، از مواد سرشار از پروتئین یا سرشار از فیبر مانند تخم‌مرغ، نان تست با عسل یا برشتوک استفاده شود✅
+                <br><br>
+                کارشناسان تغذیه به دانش آموزانی که اضطراب زیادی دارند و نمی‌توانند صبحانه مفصل بخورند ، توصیه می‌کنند از موز و مقداری کشمش استفاده کنند✅
+                <br><br>
+                بعضی از دانش‌آموزان به دلیل اضطراب زیاد امتحانات خود را خراب می‌کنند، بنابراین بهتر است برای مقابله با این اضطراب از غذاهای مناسب استفاده کنند. بعضی از سبزی‌ها از قبیل ریحان، نعنا کاهو و سیب در کاهش اضطراب بسیار مفید است✅
+                <br><br>
+                خوردن نان و پنیر و گردو یا تخم‌مرغ یا یک ظرف عدسی در روز امتحان کمک می‌کنند تا در طول امتحان آرام باشید. همچنین خوردن عسل و نوشیدنی‌های حاوی عسل در کاهش اضطراب بسیار موثر است✅
+                <br><br>
+                خوردن جگر، گوشت و ماهی کمک زیادی به کاهش اضطراب می‌کند زیرا کم‌خونی نیز یکی از دلا یل کاهش یادگیری و تمرکز است✅
+                <br><br>
+                اگر احساس خستگی می‌کنید، کمی استراحت کنید. انسان در موقع خستگی احتیاج به استراحت دارد نه محرک، بنابراین مصرف قهوه به منظور بیدار ماندن توصیه نمی‌شود✅
+
+            </h3>
+            <br><br>
+            <img src="Food.png" alt="" class="image">
+            <br><br><br>
+            <h1 style="color: rgb(255, 78, 243);">
+          بهترین راه برای مقابله با استرس امتحانات
+            </h1>
+            <br>
+            <h3 style="color: #fff;">
+                لطفا از فکر بی‌خوابی و بیدار ماندن تا صبح برای درس خواندن بیرون بیایید. برخی تصور می‌کنند که تنها شبهایی که امتحان دارند می‌توانند درس را بخوانند و یاد بگیرند
+                <br><br>
+                اما این ذهنیت اشتباه می‌باشد و سبب خواهد شد سر جلسه امتحان دچار بی‌حالی شوید و مواردی را هم که می‌توانستید پاسخ دهید ناقص جواب دهید
+                <br><br>
+                برای این که استرس نداشته باشید، شب امتحان به راحتی بخوابید تا صبح سر حال بیدار شوید و به سراغ جلسه امتحان بروید
+                <br><br>
+                تمام ذهن خود را معطوف به امتحان نکنید. شما نیاز به آرامش دارید و باید آن را از طریق کارهایی که به شما روحیه می‌دهد انجام دهید
+                <br><br>
+                گاهی ممکن است این آرامش از طریق گوش دادن به موسیقی باشد و گاهی هم خواب می‌تواند افراد را آرام کند. برخی با آشپزی آرام می‌شوند و برخی دوست دارند به پارک بروند. کاری که دوست دارید را انجام دهید و سپس به سراغ مطالعه بروید
+                <br><br>
+                بهتر است همه مطالعه خود را به شب امتحان موکول نکنید. مطالب درسی را به آرامی و در مدت برنامه‌ریزی شده بخوانید. از شیوه یادداشت برداری استفاده کنید
+                <br><br>
+                
+            </h3>
+            <br><br>
+            <footer>
+              <div class="footer-content">
+                  <h3>هنرستان فنی  حرفه ای دخترانه ام البنین</h3>
+                <br>
+                <p style="color: #fff;">
+                  آدرس  هنرستان فنی ام البنین
+                  <br>
+                  خیابان شهدای غربی کوچه ایران جنب امام زاده دوبرادران
+                  <br>
+                </p>
+                <p>
+                  066تلفن تماس  33302368
+                  <br>
+                  ساعت کاری هنرستان:روز های زوج ساعت 8 تا 12 ظهر
+                  <br>
+                   ،سال تحصیلی ساعت 7صبح تا 2 بعد از ظهر
+              
+              </p>
+        
+                  <ul class="socials">
+                      <li><a href="معرفی دبیران.HTML">معرفی اعضا</a></li>
+                      <li><a href="درباره هنرستان.HTML">درباره هنرستان</a></li>
+                      <li><a href="http://localhost/FORM1.PHP">پنل کاربری</a></li>
+                      <li><a href="گالری تصاویر.HTML">گالری تصاویر</a></li>
+                  </ul>
+              </div>
+              <div class="footer-bottom" style="background: #ff99c8;">
+                <h4 style="text-align: center;">made by
+                    <br>
+                    setareh gholamrezaie
+                </h4>
+              </div>
+          </footer>
+           
+        </body>
+    </head>
+</html>
